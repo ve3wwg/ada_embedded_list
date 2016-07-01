@@ -12,7 +12,7 @@ package Niklas is
    subtype List_T is Emb_Node_T;
 
    procedure Insert_At_Head(List: access List_T; Node: Emb_Node_Ref_T);
-   procedure Delete(Node: in Emb_Node_Ref_T);
+   procedure Delete(Node: Emb_Node_Ref_T);
 
    type Integer_Object_T; 
 
