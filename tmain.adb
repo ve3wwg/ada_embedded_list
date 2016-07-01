@@ -16,14 +16,20 @@ begin
    Two.Value := 2;
    Three.Value := 3;
    
-   Put_Line("Ins1..");
+   Put_Line("Ins1 (2)..");
    Insert_At_Head(List1,Two.Node1'Access);
-   Put_Line("Ins2..");
+   Put_Line("Ins2 (1)..");
    Insert_At_Head(List1,One.Node1'Access);
-   Put_Line("Ins3..");
+   Put_Line("Ins3 (3)..");
    Insert_At_Head(List1,Three.Node1'Access);
 
    Put_Line("Traversal..");
+   Print_Integer_Values(List1.all);
+
+   Put_Line("Delete 1..");
+   Delete(One.Node1'Access);
+
+   Put_Line("Traversal after delete of 1..");
    Print_Integer_Values(List1.all);
 
 end TMain;
