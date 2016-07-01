@@ -1,3 +1,4 @@
+with Ada.Text_IO;
 with Ada.Integer_Text_IO;
 
 package body Niklas is
@@ -40,6 +41,9 @@ package body Niklas is
          end if; 
          Node := Node.Next; 
       end loop; 
+      
+      Ada.Text_IO.New_Line;
+
    end Print_Integer_Values;
 
 end Niklas;
