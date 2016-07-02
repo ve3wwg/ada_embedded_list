@@ -23,13 +23,12 @@ package body Niklas is
    begin
       if Node.Prev /= Null then
          Node.Prev.Next := Node.Next;
-         Node.Prev := Null;
       end if;
       if Node.Next /= Null then
          Node.Next.Prev := Node.Prev;
-         Node.Next := Null;
       end if;
-
+      Node.Prev := Null;
+      Node.Next := Null;
    end Delete;
 
    procedure Print_Integer_Values (List : in List_T'Class) is 
